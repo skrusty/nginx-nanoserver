@@ -1,5 +1,5 @@
 FROM microsoft/nanoserver:latest
-ENV VERSION 1.13.8-dev-win64
+ENV VERSION 1.15.1-dev-win64
 
 SHELL ["powershell", "-command"]
 RUN Invoke-WebRequest -Uri https://nginx.kr/nginx/win64/nginx-$ENV:VERSION.zip -OutFile c:\nginx-$ENV:VERSION.zip; \
